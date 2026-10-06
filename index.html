@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="matriz.js"></script>
+    <script defer src="main.js"></script>
+    <title>FarmEscape</title>
+</head>
+<body>
+    <div id="counter">0</div>
+
+<div id="controlls">
+  <div>
+    <button id="forward" aria-label="Mover para frente (W)"><span class="keyHint">W</span>
+      <svg width="30" height="30" viewBox="0 0 10 10">
+        <g transform="rotate(0, 5,5)">
+          <path d="M5,4 L7,6 L3,6 L5,4" />
+        </g>
+      </svg>
+    </button>
+    <button id="left" aria-label="Mover para esquerda (A)"><span class="keyHint">A</span>
+      <svg width="30" height="30" viewBox="0 0 10 10">
+        <g transform="rotate(-90, 5,5)">
+          <path d="M5,4 L7,6 L3,6 L5,4" />
+        </g>
+      </svg>
+    </button>
+    <button id="backward" aria-label="Mover para trás (S)"><span class="keyHint">S</span>
+      <svg width="30" height="30" viewBox="0 0 10 10">
+        <g transform="rotate(180, 5,5)">
+          <path d="M5,4 L7,6 L3,6 L5,4" />
+        </g>
+      </svg>
+    </button>
+    <button id="right" aria-label="Mover para direita (D)"><span class="keyHint">D</span>
+      <svg width="30" height="30" viewBox="0 0 10 10">
+        <g transform="rotate(90, 5,5)">
+          <path d="M5,4 L7,6 L3,6 L5,4" />
+        </g>
+      </svg>
+    </button>
+<button id="menuBtn" aria-label="Abrir menu">
+      <span class="menuIcon">☰</span><span>Menu</span>
+    </button>
+  </div>
+</div>
+
+<div id="confirmModal" style="display: none;">
+  <div id="confirmContent">
+    <div id="confirmTitle">⚠️ VOLTAR AO MENU?</div>
+    <div id="confirmMessage">Seu progresso será perdido!</div>
+    <div class="confirmActions">
+      <button id="confirmYes">Sim, Voltar</button>
+      <button id="confirmNo">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<div id="end">
+  <div id="endContent">
+    <div id="endTitle">Cross Now</div>
+    <div id="endScore"></div>
+    <div id="initialsWrapper">
+      <label for="playerInitials">👤 Suas Iniciais:</label>
+      <input id="playerInitials" type="text" maxlength="2" placeholder="AA" autocomplete="off" required />
+    </div>
+    <div class="endActions">
+      <button id="start">Go!</button>
+      <button id="retry">Restart!</button>
+    </div>
+    <div class="endLinks">
+      <a class="linkButton" href="sobre.html">Sobre o Jogo</a>
+      <a class="linkButton" href="rank.html">Ver Ranking</a>
+      <a class="linkButton" href="fases.html">Escolher Fase</a>
+    </div>
+  </div>
+</div>
+
+<div id="credits-footer">
+  <div class="footer-text">Desenvolvido por Valdecyr Gabryel Bento</div>
+</div>
+</body>
+</html>

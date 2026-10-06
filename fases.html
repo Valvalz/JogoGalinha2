@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmEscape — Fases</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { display:flex; align-items:center; justify-content:center; min-height:100vh; padding:24px; }
+    .phase-page { width:min(900px, 100%); text-align:center; color:#fff; }
+    .phase-page h1 { font-size:clamp(2rem, 6vw, 4rem); margin:0 0 10px; }
+    .phase-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin:30px 0; }
+    .phase-card { display:flex; flex-direction:column; gap:12px; padding:24px; border:1px solid rgba(255,255,255,.2); border-radius:18px; background:rgba(12,20,35,.82); color:#fff; text-decoration:none; }
+    .phase-card:hover { transform:translateY(-3px); border-color:#66bb6a; }
+    .phase-card strong { font-size:1.35rem; color:#ffd54f; }
+    .phase-card span { color:#c9d5e8; }
+    .phase-card.desert { background:linear-gradient(145deg,rgba(92,52,25,.94),rgba(197,120,48,.78)); border-color:rgba(255,205,116,.45); }
+    .phase-card.desert:hover { border-color:#ffd166; }
+    .phase-card.desert strong { color:#ffd166; }
+    .phase-card.desert span { color:#fff0c2; }
+    .phase-card .phase-icon { font-size:2.6rem; }
+    .back-link { color:#a6c8ff; }
+  </style>
+</head>
+<body>
+  <main class="phase-page">
+    <h1>Escolha sua fase</h1>
+    <p>Escolha um cenário e alcance a meta para entrar no ranking.</p>
+    <section class="phase-grid" aria-label="Fases disponíveis">
+      <a class="phase-card" href="index.html"><div class="phase-icon">FASE 01</div><strong>Fase 1 · Campo</strong><span>Atravesse a estrada, desvie dos veículos e alcance 500 pontos.</span></a>
+      <a class="phase-card desert" href="index.html?phase=2"><div class="phase-icon">FASE 02</div><strong>Fase 2 · Deserto</strong><span>Areia, calor e um desafio avançado: alcance 750 pontos.</span></a>
+    </section>
+    <a class="back-link" href="index.html">Voltar ao jogo</a>
+  </main>
+</body>
+</html>
